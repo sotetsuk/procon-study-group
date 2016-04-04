@@ -1,4 +1,4 @@
-nes = gets.rstrip.split(/\r?\n/).map(&:to_i)
+lines = gets.rstrip.split(/\r?\n/).map(&:to_i)
 result = 0
 min = lines[0]
 for i in lines do
