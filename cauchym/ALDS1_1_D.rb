@@ -1,8 +1,13 @@
-lines = gets.rstrip.split(/\r?\n/).map(&:to_i)
-result = 0
-min = lines[0]
-for i in lines do
-  diff = [diff, lines[i]-min ].max
-  min = [min, lines[i]].min
-end
-p result
+n = STDIN.gets.to_i
+max = -1000000000
+min = STDIN.gets.to_i
+(2..n).each { |i|
+  x = STDIN.gets.to_i
+  if max < x - min then
+    max = x - min
+  end
+  if x < min
+    min = x
+  end
+}
+puts max
