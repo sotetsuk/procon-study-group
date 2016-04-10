@@ -3,6 +3,7 @@ l = []
 n.times do |num|
   l << gets.chomp.to_i
 end
+
 m = 100000000000
 d = -100000000000
 l.each do |i|
