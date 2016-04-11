@@ -11,17 +11,17 @@
 - 3.5 安定なソート [ALDS1_2_C: Stable Sort](http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_2_C&lang=jp)
 - 3.6 シェルソート [ALDS1_2_D: Shell Sort](http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_2_D&lang=jp)
 
-# 参加者
+# 参加者（発表順）
 
-- sotetsuk (AOJ: sotetsuk, POJ: sotetsuk, AtCoder: sotetsuk)
-- ryof (AOJ: ryof)
-- cauchym (AOJ: cauchym)
-- toiroakr (AOJ: a_Higu)
-- kikunantoka (AOJ: kikunantoka, AtCoder: kikunantoka)
-- chiiia12 (AOJ: chiiia12)
-- nishimuuu (AOJ: nishimuuuuuu)
-- sat0yu (AOJ: sat0yu)
-- nsasaki128 (AOJ: sassan)
+1. @sotetsuk (AOJ: sotetsuk, POJ: sotetsuk, AtCoder: sotetsuk)
+2. @nishimuuu (AOJ: nishimuuuuuu)
+3. @ryof (AOJ: ryof)
+4. @chiiia12 (AOJ: chiiia12)
+5. @kikunantoka (AOJ: kikunantoka, AtCoder: kikunantoka)
+6. @toiroakr (AOJ: a_Higu)
+7. @sat0yu (AOJ: sat0yu)
+8. @cauchym (AOJ: cauchym)
+9. @nsasaki128 (AOJ: sassan)
 
 # 進め方
 
