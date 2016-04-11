@@ -3,6 +3,9 @@ import java.util.StringJoiner;
 
 import util.FastReader;
 
+/**
+ * @see <a href='http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?lang=jp&id=ALDS1_2_A'>バブルソート</a>
+ */
 public class ALDS1_2_A {
 	static FastReader in = new FastReader();
 
