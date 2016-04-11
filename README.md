@@ -5,8 +5,8 @@
 # 問題リスト
 
 1. [ALDS1_1_D: Maximum Profit](http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_1_D)
-2. [ALDS1_1_A: Insertion Sort](http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_1_A)
-3. [ALDS1_2_A: Bubble Sort](http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_2_A)
+2. [ALDS1_1_A: Insertion Sort](http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_1_A&lang=jp)
+3. [ALDS1_2_A: Bubble Sort](http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_2_A&lang=jp)
 
 # 参加者
 
