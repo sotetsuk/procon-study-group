@@ -2,6 +2,9 @@ import java.util.List;
 
 import util.FastReader;
 
+/**
+ * @see <a href='http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_1_D'>最大の利益</a>
+ */
 public class ALDS1_1_D {
 	static FastReader in = new FastReader();
 
