@@ -29,9 +29,4 @@ public class ALDS1_1_A {
 			System.out.println(joiner.toString());
 		}
 	}
-
-	void printExit(Object msg) {
-		System.out.println(msg.toString());
-		System.exit(0);
-	}
 }
