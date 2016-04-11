@@ -7,7 +7,7 @@ for i in 1..(n-1) do
   while j >= 0 && array[j] > v
     array[j+1] = array[j]
     j -= 1
-    array[j+1] = v
   end
+  array[j+1] = v
   puts array.join(' ')
 end
