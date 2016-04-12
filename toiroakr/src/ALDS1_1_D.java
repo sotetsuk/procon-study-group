@@ -29,9 +29,9 @@ public class ALDS1_1_D {
 	}
 
 	void run8(List<Integer> nums) {
-		System.out.println(
-				nums.stream().map(i -> new int[]{i, Integer.MIN_VALUE})
-						.reduce((ints, integer) -> new int[]{Math.max(ints[0], integer[0] - ints[1]), Math.min(ints[1], integer[0])})
-						.orElse(new int[]{0})[0]);
+		int[] a = nums.stream().map(i -> new int[]{i, Integer.MIN_VALUE})
+				.reduce(new int[]{Integer.MIN_VALUE, Integer.MAX_VALUE},
+						(ints, integer) -> new int[]{Math.max(ints[0], integer[0] - ints[1]), Math.min(ints[1], integer[0])});
+		System.out.println(a[0]);
 	}
 }
