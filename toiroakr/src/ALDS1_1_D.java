@@ -28,8 +28,8 @@ public class ALDS1_1_D {
 	}
 
 	void run8(int n, List<Integer> nums) {
-		int[] a = nums.stream().map(i -> new int[]{i, Integer.MIN_VALUE, Integer.MAX_VALUE})
-				.reduce(new int[]{Integer.MIN_VALUE, Integer.MAX_VALUE, Integer.MAX_VALUE},
+		int[] a = nums.stream().map(i -> new int[]{i, Integer.MIN_VALUE})
+				.reduce(new int[]{Integer.MIN_VALUE, Integer.MAX_VALUE},
 						(ints, integer) -> new int[]{Math.max(ints[0], integer[0] - ints[1]), Math.min(ints[1], integer[0])});
 		System.out.println(a[0]);
 	}
