@@ -11,4 +11,3 @@ min = STDIN.gets.to_i
   end
 }
 puts max
-
