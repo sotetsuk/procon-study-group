@@ -1,6 +1,6 @@
 import java.util.Arrays;
-import java.util.StringJoiner;
-
+import java.util.stream.Collectors;
+¥
 import util.FastReader;
 
 /**
@@ -32,9 +32,7 @@ public class ALDS1_2_A {
 				}
 			}
 		}
-		StringJoiner joiner = new StringJoiner(" ");
-		Arrays.stream(nums).mapToObj(String::valueOf).forEach(joiner::add);
-		System.out.println(joiner.toString());
+		System.out.println(Arrays.stream(nums).mapToObj(String::valueOf).collect(Collectors.joining(" ")));
 		System.out.println(count);
 	}
 }
