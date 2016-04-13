@@ -1,10 +1,32 @@
-
 # プロコン（アルゴリズム・データ構造）勉強会
 
 [プログラミングコンテスト攻略のためのアルゴリズムとデータ構造](http://www.amazon.co.jp/dp/4839952957/ref=pd_lpo_sbs_dp_ss_3?pf_rd_p=187205609&pf_rd_s=lpo-top-stripe&pf_rd_t=201&pf_rd_i=4839942390&pf_rd_m=AN1VRQENFRJN5&pf_rd_r=13KZVTWSE06JN0HF2WRE)
 
 # 日程
 基本的に毎週月曜だが、参加者の都合に合わせて柔軟に調整。
+
+# 参加者（発表順）
+
+1. @sotetsuk (AOJ: sotetsuk, POJ: sotetsuk, AtCoder: sotetsuk)
+2. @nishimuuu (AOJ: nishimuuuuuu)
+3. @ryof (AOJ: ryof)
+4. @chiiia12 (AOJ: chiiia12)
+5. @kikunantoka (AOJ: kikunantoka, AtCoder: kikunantoka)
+6. @toiroakr (AOJ: a_Higu)
+7. @sat0yu (AOJ: sat0yu)
+8. @cauchym (AOJ: cauchym)
+9. @nsasaki128 (AOJ: sassan)
+10. @akito0107 (AOJ: akito0107)
+11. noro-san (AOJ: non1207)
+
+# 進め方
+
+1. 毎週（2題）をそれぞれ割当られた担当者が解説（各20min以内程度）
+2. 皆で解く（事前に問いてくるのが理想）
+  - AOJの問題を通す
+  - 解いた問題をmasterにプルリクを送る（レビューが欲しければ誰かにassignする、どうでも良ければ自分でマージ）
+  - （slackの#procon_notificationに通知が行きます）
+  - 基本的には解けたら帰る
 
 # 問題リスト
 
@@ -22,7 +44,6 @@
 
 ### 4章 データ構造
 - 4.2 スタック [ALDS1_3_A: Stack](http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_3_A&lang=jp)
-
 - 4.3 キュー [ALDS1_3_B: Queue](http://judge.u-aizu.ac.jp/onlinejudge/description.jspALDS1_3_B?id=&lang=jp)
 - 4.4 連結リスト [ALDS1_3_C: Doubly Linked List](http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_3_C&lang=jp)
 - 4.6 データ構造の応用:面積計算 [ALDS1_3_D: Areas on the Cross-Section Diagram](http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_3_D&lang=jp)
@@ -120,26 +141,3 @@
 - 19.1 8クイーン問題 [ALDS1_13_A: 8 Queens Problem](http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_13_A&lang=jp)
 - 19.2 8パズル [ALDS1_13_B: 8 Puzzle](http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_13_B&lang=jp)
 - 19.3 15パズル [ALDS1_13_C: 15 Puzzle](http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_13_C&lang=jp)
-
-# 参加者（発表順）
-
-1. @sotetsuk (AOJ: sotetsuk, POJ: sotetsuk, AtCoder: sotetsuk)
-2. @nishimuuu (AOJ: nishimuuuuuu)
-3. @ryof (AOJ: ryof)
-4. @chiiia12 (AOJ: chiiia12)
-5. @kikunantoka (AOJ: kikunantoka, AtCoder: kikunantoka)
-6. @toiroakr (AOJ: a_Higu)
-7. @sat0yu (AOJ: sat0yu)
-8. @cauchym (AOJ: cauchym)
-9. @nsasaki128 (AOJ: sassan)
-10. @akito0107 (AOJ: akito0107)
-11. noro-san (AOJ: non1207)
-
-# 進め方
-
-1. 毎週（2題）をそれぞれ割当られた担当者が解説（各20min以内程度）
-2. 皆で解く（事前に問いてくるのが理想）
-  - AOJの問題を通す
-  - 解いた問題をmasterにプルリクを送る（レビューが欲しければ誰かにassignする、どうでも良ければ自分でマージ）
-  - （slackの#procon_notificationに通知が行きます）
-  - 基本的には解けたら帰る
