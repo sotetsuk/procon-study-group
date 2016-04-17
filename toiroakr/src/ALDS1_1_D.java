@@ -1,4 +1,5 @@
 import java.util.List;
+import java.util.Optional;
 
 import util.FastReader;
 
@@ -23,5 +24,14 @@ public class ALDS1_1_D {
 			min = Math.min(min, num);
 		}
 		System.out.println(ans);
+
+		run8(nums);
+	}
+
+	void run8(List<Integer> nums) {
+		int[] a = nums.stream().map(i -> new int[]{i, Integer.MIN_VALUE})
+				.reduce(new int[]{Integer.MIN_VALUE, Integer.MAX_VALUE},
+						(ints, integer) -> new int[]{Math.max(ints[0], integer[0] - ints[1]), Math.min(ints[1], integer[0])});
+		System.out.println(a[0]);
 	}
 }
