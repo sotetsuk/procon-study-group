@@ -17,7 +17,7 @@
 8. @cauchym (AOJ: cauchym)
 9. @nsasaki128 (AOJ: sassan)
 10. @akito0107 (AOJ: akito0107)
-11. noro-san (AOJ: non1207)
+11. @nonkoz1207 (AOJ: non1207)
 
 # 進め方
 
