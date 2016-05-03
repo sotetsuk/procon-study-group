@@ -1,38 +1,38 @@
 #include <iostream>
 #include <cstdio>
 #include <string>
+#include <sstream>
 
 using namespace std;
 
-#define MAX_SIZE 200;
+#define MAX_SIZE 200
 
-class Stack{
-  
+class Stack{ 
 public:
   void initialize();
   bool isEmpty();
   bool isFull();
-  void push(string n);
-  string pop();  
+  void push(int n);
+  int pop();  
 private:
   int top;
-  string stack[MAX_SIZE];
+  int stack[MAX_SIZE];
 };
   
-  void Stack::initialize(){
-    top = 0;
-    for(int i=0;i<MAX_SIZE;i++){
-      stack[i] = "";
-    }
+void Stack::initialize(){
+  top = 0;
+  for(int i=0;i<MAX_SIZE;i++){
+    stack[i] = 0;
   }
+}
 
 bool Stack::isEmpty(){
   if(top == 0)return true;
   else return false;
 }
 
-bool Stack::isFull(int max_size){
-  if(top > max_size)return true;
+bool Stack::isFull(){
+  if(top > MAX_SIZE)return true;
   return false;
 }
 
@@ -41,22 +41,41 @@ void Stack::push(int n){
   stack[top] = n;
 }
 
-string Stack::pop(){
+int Stack::pop(){
   top--;
   return stack[top+1];
 }
 
 int main()
 {
-  int num_number = 100;
-  int num_op = 99;
-  
-  string number[num_number];
-  string op[num_op];
 
-  Stack stk;
+  Stack *stk = new Stack();
   
 
+  string line,in;
+  getline(cin ,line);
+  stringstream ss(line);
+
+  while(getline(ss, in, ' ')){
+    int a,b;
+    if(in == "+"){
+      a = stk->pop();
+      b = stk->pop();
+      a = b + a;      
+    }else if(in == "-"){
+      a = stk->pop();
+      b = stk->pop();
+      a = b - a;      
+    }else if(in == "*"){
+      a = stk->pop();
+      b = stk->pop();
+      a = b * a;
+    }else{
+      sscanf(in.c_str(), "%d", &a);
+    }
+    stk->push(a);
+  }
+  cout << stk->pop() << endl;
   return 0;
   
 }
