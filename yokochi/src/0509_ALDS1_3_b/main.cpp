@@ -1,42 +1,50 @@
 #include <iostream>
 #include <stdlib.h>
+#include <vector>
 
 using namespace std;
-
-int head = 0;
-int tail = 0;
-int t = 0;
 
 typedef struct process {
     string name;
     int time;
 } process_t;
+int head = 0;
+int tail = 0;
+int t = 0;
 
-void enqueue(process_t* arr, int h)
+vector<process_t*> arr;
+void enqueue(process_t* p)
 {
     tail++;
-    arr[tail] = arr[h];
+    arr.push_back(p);
 }
 
-int dequeue(process_t* arr) { return head++; }
+process_t* dequeue()
+{
+    process_t* p = arr[head];
+    head++;
+    return p;
+}
 
 void print_arr(string name, int time) { cout << name << " " << time << endl; }
 
-void solve(process_t* arr, int q)
+void solve(int q)
 {
-    if (head > tail) {
-	return;
+    if (head>tail) {
+        return;
     }
-    int tmp = dequeue(arr);
-    if (arr[tmp].time > q) {
-	arr[tmp].time = arr[tmp].time - q;
-	t += q;
-	enqueue(arr, tmp);
+    process_t* p = dequeue();
+    
+    if (p->time > q) {
+        p->time = p->time - q;
+        t += q;
+        enqueue(p);
     } else {
-	t += arr[tmp].time;
-	print_arr(arr[tmp].name, t);
+        t += p->time;
+        print_arr(p->name, t);
     }
-    solve(arr, q);
+    
+    solve(q);
 }
 
 int main()
@@ -46,11 +54,15 @@ int main()
     cin >> N;
     cin >> q;
     tail = N - 1;
-
-    process_t* arr = (process_t*)malloc(100 * sizeof(process_t));
     for (int i = 0; i < N; i++) {
-	cin >> arr[i].name >> arr[i].time;
+        process_t *p = (process_t*)malloc(sizeof(process_t));
+        cin >> p->name;
+        cin >> p->time;
+        arr.push_back(p);
     }
-    solve(arr, q);
+    solve(q);
     return 0;
 }
+
+
+
