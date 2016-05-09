@@ -32,20 +32,18 @@ void print_arr(string name, int time) { cout << name << " " << time << endl; }
 
 void solve(int q)
 {
-    process_t p = dequeue();
-    
-    if (p.time > q) {
-        p.time = p.time - q;
-        t += q;
-        enqueue(p);
-    } else {
-        t += p.time;
-        print_arr(p.name, t);
-    }
-    if (head>tail) {
-        return;
-    }
-    solve(q);
+    do {
+        process_t p = dequeue();
+        if (p.time > q) {
+            p.time = p.time - q;
+            t += q;
+            enqueue(p);
+        } else {
+            t += p.time;
+            print_arr(p.name, t);
+        }
+    } while (head <= tail);
+    return;
 }
 
 int main()
@@ -66,5 +64,3 @@ int main()
     solve(q);
     return 0;
 }
-
-
