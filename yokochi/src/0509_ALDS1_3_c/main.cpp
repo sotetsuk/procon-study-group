@@ -24,12 +24,12 @@ void init(Node* nil)
 Node* insertN(int key, Node* prev)
 {
     Node* n = (Node*)malloc(sizeof(Node));
-    
+
     n->key = key;
     n->prev = prev;
     n->next = nil;
     if (n->prev != nil) {
-        n->prev->next = n;
+	n->prev->next = n;
     }
     return n;
 }
@@ -37,33 +37,33 @@ Node* deleteN(int key, Node* n)
 {
     Node* last = n;
     while (n != nil) {
-        if (key == n->key) {
-            if (n->prev != nil) {
-                n->prev->next = n->next;
-            }
-            if (n->next != nil) {
-                n->next->prev = n->prev;
-            }
-            
-            if (n == last) {
-                last = n->prev;
-            }
-            free(n);
-            break;
-            return last;
-        }
-        n = n->prev;
+	if (key == n->key) {
+	    if (n->prev != nil) {
+		n->prev->next = n->next;
+	    }
+	    if (n->next != nil) {
+		n->next->prev = n->prev;
+	    }
+
+	    if (n == last) {
+		last = n->prev;
+	    }
+	    free(n);
+	    break;
+	    return last;
+	}
+	n = n->prev;
     }
     return last;
 }
 void deleteFirstN(Node* n)
 {
     while (n != nil) {
-        if (n->prev == nil) {
-            n->next->prev = nil;
-            free(n);
-        }
-        n = n->prev;
+	if (n->prev == nil) {
+	    n->next->prev = nil;
+	    free(n);
+	}
+	n = n->prev;
     }
 }
 Node* deleteLastN(Node* n)
@@ -77,11 +77,11 @@ Node* deleteLastN(Node* n)
 void print(Node* n)
 {
     while (n != nil) {
-        cout << n->key;
-        n = n->prev;
-        if (n != nil) {
-            cout << " ";
-        }
+	cout << n->key;
+	n = n->prev;
+	if (n != nil) {
+	    cout << " ";
+	}
     }
 }
 int main()
@@ -93,18 +93,20 @@ int main()
     char command[20];
     int key = 0;
     for (int i = 0; i < N; i++) {
-        //        cin >> command >> key;
-        scanf("%s%d",command,&key);
-        if (INSERT == command) {
-            prevNode = insertN(key, prevNode);
-        } else if (DELETE == command) {
-            prevNode = deleteN(key, prevNode);
-        } else if (DELETE_FIRST == command) {
-            deleteFirstN(prevNode);
-        } else if (DELETE_LAST == command) {
-            prevNode = deleteLastN(prevNode);
-        }
+	cin >> command;
+	if (INSERT == command) {
+	    cin >> key;
+	    prevNode = insertN(key, prevNode);
+	} else if (DELETE == command) {
+	    cin >> key;
+	    prevNode = deleteN(key, prevNode);
+	} else if (DELETE_FIRST == command) {
+	    deleteFirstN(prevNode);
+	} else if (DELETE_LAST == command) {
+	    prevNode = deleteLastN(prevNode);
+	}
     }
     print(prevNode);
     return 0;
 }
+
