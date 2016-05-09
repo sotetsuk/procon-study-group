@@ -35,7 +35,7 @@ Node* insertN(int key, Node* prev)
 }
 Node* deleteN(int key, Node* n)
 {
-    Node* last = n;
+    Node *last = n;
     while (n != nil) {
 	if (key == n->key) {
 	    if (n->prev != nil) {
@@ -56,7 +56,7 @@ Node* deleteN(int key, Node* n)
     }
     return last;
 }
-void deleteFirstN(Node* n)
+void deleteLastN(Node* n)
 {
     while (n != nil) {
 	if (n->prev == nil) {
@@ -66,7 +66,7 @@ void deleteFirstN(Node* n)
 	n = n->prev;
     }
 }
-Node* deleteLastN(Node* n)
+Node* deleteFirstN(Node* n)
 {
     n->prev->next = nil;
     Node* prev = n->prev;
@@ -83,6 +83,7 @@ void print(Node* n)
 	    cout << " ";
 	}
     }
+    cout<<endl;
 }
 int main()
 {
@@ -101,9 +102,9 @@ int main()
 	    cin >> key;
 	    prevNode = deleteN(key, prevNode);
 	} else if (DELETE_FIRST == command) {
-	    deleteFirstN(prevNode);
+	    prevNode = deleteFirstN(prevNode);
 	} else if (DELETE_LAST == command) {
-	    prevNode = deleteLastN(prevNode);
+	    deleteLastN(prevNode);
 	}
     }
     print(prevNode);
