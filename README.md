@@ -48,7 +48,7 @@
 
 ### 4章 データ構造
 - 4.2 スタック [ALDS1_3_A: Stack](http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_3_A&lang=jp)
-- 4.3 キュー [ALDS1_3_B: Queue](http://judge.u-aizu.ac.jp/onlinejudge/description.jspALDS1_3_B?id=&lang=jp)
+- 4.3 キュー [ALDS1_3_B: Queue](http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_3_B&lang=jp)
 - 4.4 連結リスト [ALDS1_3_C: Doubly Linked List](http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_3_C&lang=jp)
 - 4.6 データ構造の応用:面積計算 [ALDS1_3_D: Areas on the Cross-Section Diagram](http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_3_D&lang=jp)
 
