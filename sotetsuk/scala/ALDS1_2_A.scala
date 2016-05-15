@@ -1,6 +1,6 @@
 import java.util.Scanner
 
-object ALDS1_2_A { // -> Main
+object Main {
   def main(args: Array[String]) {
     val sc = new Scanner(System.in)
     val n = sc.nextInt

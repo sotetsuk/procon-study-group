@@ -17,7 +17,7 @@
 8. @cauchym (AOJ: cauchym)
 9. @nsasaki128 (AOJ: sassan)
 10. @akito0107 (AOJ: akito0107)
-11. noro-san (AOJ: non1207)
+11. @nonkoz1207 (AOJ: non1207)
 
 # 進め方
 
@@ -27,6 +27,10 @@
   - 解いた問題をmasterにプルリクを送る（レビューが欲しければ誰かにassignする、どうでも良ければ自分でマージ）
   - （slackの#procon_notificationに通知が行きます）
   - 基本的には解けたら帰る
+
+## gitのルール
+1. 基本的に1つの問題につき、各自commitは1回まで。
+2. レビュー反映などでminor fixがある場合はmasterにマージする前にrebaseしてcommitをまとめる。
 
 # 問題リスト
 
@@ -44,7 +48,7 @@
 
 ### 4章 データ構造
 - 4.2 スタック [ALDS1_3_A: Stack](http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_3_A&lang=jp)
-- 4.3 キュー [ALDS1_3_B: Queue](http://judge.u-aizu.ac.jp/onlinejudge/description.jspALDS1_3_B?id=&lang=jp)
+- 4.3 キュー [ALDS1_3_B: Queue](http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_3_B&lang=jp)
 - 4.4 連結リスト [ALDS1_3_C: Doubly Linked List](http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_3_C&lang=jp)
 - 4.6 データ構造の応用:面積計算 [ALDS1_3_D: Areas on the Cross-Section Diagram](http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_3_D&lang=jp)
 
