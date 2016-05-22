@@ -1,8 +1,7 @@
-import java.util.Arrays;
-import java.util.StringJoiner;
-import java.util.stream.Collectors;
-
 import util.FastReader;
+
+import java.util.Arrays;
+import java.util.stream.Collectors;
 
 /**
  * @see <a href='http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?lang=jp&id=ALDS1_1_A'>挿入ソート</a>
