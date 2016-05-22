@@ -1,7 +1,6 @@
-import java.util.List;
-import java.util.Optional;
-
 import util.FastReader;
+
+import java.util.List;
 
 /**
  * @see <a href='http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_1_D'>最大の利益</a>
