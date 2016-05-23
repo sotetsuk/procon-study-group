@@ -1,10 +1,10 @@
 class Dict(object):
 
-    m1 = 2 ** 24 - 1
+    m1 = 1046527
     m2 = m1 - 1
 
     def __init__(self):
-        self._dict = ["" for _ in range(self.m1)]
+        self._dict = [""] * self.m1
 
     def insert(self, k):
         i = 0
@@ -23,14 +23,16 @@ class Dict(object):
         while True:
             ix = self._h(k, i)
             if self._dict[ix] == k:
-                return ix
+                return True
             elif self._dict[ix] == "":
-                return -1
+                return False
             else:
                 i += 1
 
+        return False
+
     def _h(self, k, i):
-        return self._h1(k) + i * self._h2(k)
+        return (self._h1(k) + i * self._h2(k)) % self.m1
 
     def _h1(self, k):
         return k % self.m1
@@ -40,11 +42,11 @@ class Dict(object):
 
 
 def to_int(s):
-    _s = s[::]
-
     ret = 0
     i = 1
-    for e in _s:
+    for j in range(len(s)):
+        e = s[len(s) - j - 1]
+
         if e == 'A':
             ret += 1 * i
         elif e == 'C':
@@ -53,7 +55,7 @@ def to_int(s):
             ret += 3 * i
         elif e == 'T':
             ret += 4 * i
-        i *= 4
+        i *= 5
 
     return ret
 
@@ -66,8 +68,8 @@ if __name__ == '__main__':
     for _ in range(n):
         cmd, val = input().split()
 
-        if cmd == "insert":
+        if cmd[0] == "i":
             d.insert(to_int(val))
         else:
-            ans = "yes" if d.find(to_int(val)) != -1 else "no"
+            ans = "yes" if d.find(to_int(val)) else "no"
             print(ans)
