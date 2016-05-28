@@ -1,12 +1,7 @@
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.InputMismatchException;
-import java.util.List;
-import java.util.stream.Collectors;
-
 import util.FastReader;
+
+import java.util.Arrays;
+import java.util.stream.Collectors;
 
 /**
  * @see <a href='http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?lang=jp&id=ALDS1_2_B'>選択ソート</a>
