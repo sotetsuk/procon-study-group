@@ -13,98 +13,86 @@ static string DELETE_FIRST = "deleteFirst";
 static string DELETE_LAST = "deleteLast";
 
 Node* nil;
+void print()
+{
+    Node* n = nil->next;
+    while (n != nil) {
+        cout << n->key;
+        n = n->next;
+        if (n != nil) {
+            cout << " ";
+        }
+    }
+    cout << endl;
+}
 
-void init(Node* nil)
+void init()
 {
     nil = (Node*)malloc(sizeof(Node));
     nil->next = nil;
     nil->prev = nil;
 }
 
-Node* insertN(int key, Node* prev)
+void insertN(int key)
 {
     Node* n = (Node*)malloc(sizeof(Node));
-    
     n->key = key;
-    n->prev = prev;
-    n->next = nil;
-    if (n->prev != nil) {
-        n->prev->next = n;
-    }
-    return n;
+    n->next = nil->next;
+    n->prev = nil;
+    nil->next->prev = n;
+    nil->next = n;
 }
-Node* deleteN(int key, Node* n)
+void deleteN(int key)
 {
-    Node* last = n;
+    Node* n = nil->next;
     while (n != nil) {
         if (key == n->key) {
-            if (n->prev != nil) {
-                n->prev->next = n->next;
-            }
-            if (n->next != nil) {
-                n->next->prev = n->prev;
-            }
-            
-            if (n == last) {
-                last = n->prev;
-            }
+            n->prev->next = n->next;
+            n->next->prev = n->prev;
             free(n);
             break;
-            return last;
         }
-        n = n->prev;
-    }
-    return last;
-}
-void deleteFirstN(Node* n)
-{
-    while (n != nil) {
-        if (n->prev == nil) {
-            n->next->prev = nil;
-            free(n);
-        }
-        n = n->prev;
+        n = n->next;
     }
 }
-Node* deleteLastN(Node* n)
+void deleteLastN()
 {
+    Node* n = nil->prev;
     n->prev->next = nil;
-    Node* prev = n->prev;
+    nil->prev = n->prev;
     free(n);
-    return prev;
+}
+void deleteFirstN()
+{
+    Node* n = nil->next;
+    n->next->prev = nil;
+    nil->next = n->next;
+    free(n);
 }
 
-void print(Node* n)
-{
-    while (n != nil) {
-        cout << n->key;
-        n = n->prev;
-        if (n != nil) {
-            cout << " ";
-        }
-    }
-}
 int main()
 {
+    init();
     int N = 0;
     scanf("%d", &N);
-    init(nil);
-    Node* prevNode = nil;
     char command[20];
     int key = 0;
     for (int i = 0; i < N; i++) {
-        //        cin >> command >> key;
-        scanf("%s%d",command,&key);
+        cin >> command;
         if (INSERT == command) {
-            prevNode = insertN(key, prevNode);
+            cin >> key;
+            insertN(key);
         } else if (DELETE == command) {
-            prevNode = deleteN(key, prevNode);
+            cin >> key;
+            deleteN(key);
         } else if (DELETE_FIRST == command) {
-            deleteFirstN(prevNode);
+            deleteFirstN();
         } else if (DELETE_LAST == command) {
-            prevNode = deleteLastN(prevNode);
+            deleteLastN();
         }
     }
-    print(prevNode);
+      print();
     return 0;
 }
+
+
