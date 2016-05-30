@@ -13,11 +13,12 @@
 4. @chiiia12 (AOJ: chiiia12)
 5. @kikunantoka (AOJ: kikunantoka, AtCoder: kikunantoka)
 6. @toiroakr (AOJ: a_Higu)
-7. @sat0yu (AOJ: sat0yu)
-8. @cauchym (AOJ: cauchym)
-9. @nsasaki128 (AOJ: sassan)
-10. @akito0107 (AOJ: akito0107)
-11. @nonkoz1207 (AOJ: non1207)
+7. @smochi (AOJ: smochi)
+8. @sat0yu (AOJ: sat0yu)
+9. @cauchym (AOJ: cauchym)
+10. @nsasaki128 (AOJ: sassan)
+11. @akito0107 (AOJ: akito0107)
+12. @nonkoz1207 (AOJ: non1207)
 
 # 進め方
 
