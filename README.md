@@ -147,5 +147,9 @@
 - 19.2 8パズル [ALDS1_13_B: 8 Puzzle](http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_13_B&lang=jp)
 - 19.3 15パズル [ALDS1_13_C: 15 Puzzle](http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_13_C&lang=jp)
 
+# 関連リンク
+- [AOJ](http://judge.u-aizu.ac.jp/onlinejudge/)
+- [LeetCode](https://leetcode.com/)
+
 # 食事について
 [マクドナルドJR東京駅店](http://www.mcdonalds.co.jp/shop/map/map.php?strcode=13928) テイクアウト推奨
