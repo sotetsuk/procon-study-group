@@ -13,3 +13,11 @@ dic = {}
     end
   end
 end
+
+def h1(key)
+  return key % M
+end
+
+def h2(key)
+  return (1 + (key % (M-1)))
+end
