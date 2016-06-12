@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ALDSl_5_A {
+public class ALDS1_5_A {
 
     private static Scanner sc = new Scanner(System.in);
     private static int n, q;
