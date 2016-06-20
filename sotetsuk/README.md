@@ -19,3 +19,7 @@
 |6.2 ALDS1_5_A|o|[java/src/ALDS1_5_A.java](java/src/ALDS1_5_A.java)|
 |6.3 ALDS1_5_C|o|[java/src/ALDS1_5_C.java](java/src/ALDS1_5_C.java)|
 |7.1 ALDS1_5_B|o|[java/src/ALDS1_5_B.java](java/src/ALDS1_5_B.java)|
+|7.2 ALDS1_6_B|o|[java/src/ALDS1_6_B.java](java/src/ALDS1_6_B.java)|
+|7.3 ALDS1_6_C|o|[java/src/ALDS1_6_C.java](java/src/ALDS1_6_C.java)|
+|7.4 ALDS1_6_A|o|[java/src/ALDS1_6_A.java](java/src/ALDS1_6_A.java)|
+|7.6 ALDS1_5_D|o|[java/src/ALDS1_5_D.java](java/src/ALDS1_5_D.java)|
