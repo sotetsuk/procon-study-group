@@ -104,11 +104,12 @@ void deleteNode(Node* indexNode)
 	Node* child = indexNode->left == NIL ? indexNode->right : indexNode->left;
 	child->parent = parent;
 	if (parent->left == indexNode) {
-	    parent->left = child;
+		parent->left = child;
 	}
 	if (parent->right == indexNode) {
-	    parent->right = child;
+		parent->right = child;
 	}
+	insertNode(parent, child->index);
 	return;
     } else {
 	//子が２つの時
