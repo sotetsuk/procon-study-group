@@ -83,6 +83,25 @@ Node* findNode(Node* node, int index)
     }
     return NIL;
 }
+Node* getMinimum(Node* node)
+{
+    while (node->left != NIL) {
+	node = node->left;
+    }
+    return node;
+}
+Node* getSuccessor(Node* node)
+{
+    if (node->right != NIL) {
+	return getMinimum(node->right);
+    }
+    Node* y = node->parent;
+    while (y != NIL && node == y->right) {
+	node = y;
+	y = y->parent;
+    }
+    return y;
+}
 void deleteNode(Node* indexNode)
 {
     if (indexNode->index == NIL_INDEX) {
@@ -104,17 +123,17 @@ void deleteNode(Node* indexNode)
 	Node* child = indexNode->left == NIL ? indexNode->right : indexNode->left;
 	child->parent = parent;
 	if (parent->left == indexNode) {
-		parent->left = child;
+	    parent->left = child;
 	}
 	if (parent->right == indexNode) {
-		parent->right = child;
+	    parent->right = NIL;
 	}
-	insertNode(parent, child->index);
 	return;
     } else {
 	//子が２つの時
-	indexNode->index = indexNode->right->index;
-	deleteNode(indexNode->right);
+	Node* inNode = getSuccessor(indexNode);
+	indexNode->index = inNode->index;
+	deleteNode(inNode);
     }
 }
 int main()
