@@ -16,9 +16,10 @@
 7. @smochi (AOJ: smochi)
 8. @sat0yu (AOJ: sat0yu)
 9. @cauchym (AOJ: cauchym)
-10. @nsasaki128 (AOJ: sassan)
-11. @akito0107 (AOJ: akito0107)
-12. @nonkoz1207 (AOJ: non1207)
+10. @fullflu
+11. @nsasaki128 (AOJ: sassan)
+12. @akito0107 (AOJ: akito0107)
+13. @nonkoz1207 (AOJ: non1207)
 
 # 進め方
 
