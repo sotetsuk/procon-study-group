@@ -107,7 +107,7 @@ void deleteNode(Node* indexNode)
     if (indexNode->index == NIL_INDEX) {
 	return;
     }
-    //子がいない時
+    //子が無い時
     if (indexNode->left == NIL && indexNode->right == NIL) {
 	Node* parent = indexNode->parent;
 	if (parent->left == indexNode) {
