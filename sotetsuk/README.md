@@ -23,3 +23,9 @@
 |7.3 ALDS1_6_C|o|[java/src/ALDS1_6_C.java](java/src/ALDS1_6_C.java)|
 |7.4 ALDS1_6_A|o|[java/src/ALDS1_6_A.java](java/src/ALDS1_6_A.java)|
 |7.6 ALDS1_5_D|o|[java/src/ALDS1_5_D.java](java/src/ALDS1_5_D.java)|
+|7.7 ALDS1_6_D|x||
+|8.2 ADS1_7_A|x||
+|8.3 ALDS1_7_B|x||
+|8.4 ALDS1_7_C|x||
+|8.5 ALDS1_7_D|o|[java/src/ALDS1_7_D.java](java/src/ALDS1_7_D.java)||
+|9.2 ALDS1_8_A|Mem err|[java/src/ALDS1_8_A.java](java/src/ALDS1_8_A.java)|
