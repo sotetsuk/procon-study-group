@@ -1,20 +1,13 @@
-package aoj;
+package aoj.part12.ALDS1_11_A;
 
 import java.util.Scanner;
 
-public class ALDS1_11_A {
-    public static final int N = 100;
-
+public class Main {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
-        int[][] m = new int[N][N];
 
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                m[i][j] = 0;
-            }
-        }
+        int n = scanner.nextInt();
+        int[][] mat = new int[n][n];
 
         int u, k, v;
         for (int i = 0; i < n; i++) {
@@ -22,17 +15,17 @@ public class ALDS1_11_A {
             k = scanner.nextInt();
             for (int j = 0; j < k; j++) {
                 v = scanner.nextInt();
-                m[u-1][v-1] = 1;
+                mat[u-1][v-1] = 1;
             }
         }
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                if (j != 0)
+                System.out.print(mat[i][j]);
+                if (j != n - 1)
                     System.out.print(" ");
-                System.out.print(m[i][j]);
             }
-            System.out.println();
+            System.out.print("\n");
         }
     }
 }
