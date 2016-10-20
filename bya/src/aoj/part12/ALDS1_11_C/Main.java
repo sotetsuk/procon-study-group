@@ -33,13 +33,14 @@ public class Main {
 
         Distance[s] = 0;
 
+        int u;
         while (!queue.isEmpty()){
-            int u = queue.peek();
+            u = queue.peek();
             queue.remove();
 
             for (int v = 0; v < n; v++) {
-                if (Distance[v] == INF) continue;
                 if (Mat[u][v] == 0) continue;
+                if (Distance[v] != INF) continue;
                 queue.add(v);
                 Distance[v] = Distance[u] + 1;
             }
