@@ -1,3 +1,4 @@
 toiroakr/out
-.idea/*
+.idea
 
+*.iml
