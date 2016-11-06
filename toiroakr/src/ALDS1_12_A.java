@@ -64,14 +64,14 @@ public class ALDS1_12_A {
 
     private Edge nextEdge(PriorityQueue<Edge> edges, Set<Integer> used) {
         List<Edge> list = new ArrayList<>();
-        while(true) {
+        while (true) {
             Edge temp = edges.poll();
             boolean containX = used.contains(temp.x);
             boolean containY = used.contains(temp.y);
             if (containX && containY) {
                 continue;
             }
-            if(!containX && !containY){
+            if (!containX && !containY) {
                 list.add(temp);
                 continue;
             }
