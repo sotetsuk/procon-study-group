@@ -3,11 +3,13 @@ CONST_INF = int(1e+9 + 1)
 
 # import pprint as pp
 # import pdb
+from collections import deque
+
 
 def dijkstra(vnum, s, m):
     dist = [CONST_INF for i in range(vnum)]
     status = ['new' for j in range(vnum)]
-    p = [-1 for k in range(vnum)]
+    # p = [-1 for k in range(vnum)]
     dist[s] = 0
     status[0] = 'checked'
 
@@ -28,7 +30,6 @@ def dijkstra(vnum, s, m):
             if status != 'fixed' and m[u][v] != CONST_INF:
                 if dist[u] + m[u][v] < dist[v]:
                     dist[v] = dist[u] + m[u][v]
-                    p[v] = u
                     status[v] = 'checked'
 
     for i in range(n):
