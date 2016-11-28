@@ -20,6 +20,8 @@
 11. @nsasaki128 (AOJ: sassan)
 12. @akito0107 (AOJ: akito0107)
 13. @nonkoz1207 (AOJ: non1207)
+14. @byam
+15. @hirosassa
 
 # 進め方
 
